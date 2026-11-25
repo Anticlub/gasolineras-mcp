@@ -1,0 +1,15 @@
+{
+  "//": "Config base: la usa el EDITOR y el type-check. Revisa todo el código (incluidos smoke.ts y test-client.ts) pero no genera archivos (noEmit).",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "test-client.ts"]
+}

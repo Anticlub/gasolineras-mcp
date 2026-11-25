@@ -1,0 +1,12 @@
+{
+  "//": "Config de BUILD: hereda de tsconfig.json y SÍ genera archivos, pero solo de la librería (no de los scripts de prueba). Se usa con: tsc -p tsconfig.build.json",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": false,
+    "sourceMap": false
+  },
+  "include": ["src/index.ts", "src/api.ts", "src/types.ts"]
+}
